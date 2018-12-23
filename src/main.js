@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import AppStore from './store'
+import AppStore from './stores/main'
 import TextView from './components/textView'
 import Menu from './components/menu'
 // useStrict(true)

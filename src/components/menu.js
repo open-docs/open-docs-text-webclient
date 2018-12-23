@@ -5,7 +5,7 @@ import {MODAL_NAMES} from '../consts'
 const Menu = ({store}) => {
   return store.loading ? null : (
     <nav className='navbar navbar-expand navbar-dark bg-dark'>
-      <a className='navbar-brand' href='javascript:void(0)'>{store.doc.title}</a>
+      <a className='navbar-brand' href='javascript:void(0)' onClick={() => store.showModal(MODAL_NAMES.TITLE)}>{store.doc.title}</a>
       <button className='navbar-toggler' type='button' data-toggle='collapse' aria-label='Toggle navigation'>
         <span className='navbar-toggler-icon' />
       </button>
