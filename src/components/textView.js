@@ -3,6 +3,7 @@ import React from 'react'
 import {observer} from 'mobx-react'
 import {FormControl} from 'react-bootstrap'
 import SubstsEditModal from './substsEdit'
+import PermsEditModal from './permsEdit'
 
 const _style = {
   width: '100%',
@@ -17,6 +18,7 @@ const TextView = observer(({store}) => {
           placeholder='nazev dokumentu'
           onChange={store.onChange.bind(store, 'title')} />
         <SubstsEditModal store={store} />
+        <PermsEditModal store={store} />
         <div className='row'>
           <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
             <textarea style={_style}

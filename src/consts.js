@@ -1,4 +1,5 @@
 
 export const MODAL_NAMES = {
-  SUBSTS: 'substitutions'
+  SUBSTS: 'substitutions',
+  PERMS: 'permissions'
 }

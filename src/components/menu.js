@@ -11,8 +11,8 @@ const Menu = ({store}) => {
       </button>
       <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
         <div className='navbar-nav'>
-          <a className='nav-item nav-link active' href='javascript:void'>Home</a>
-          <a className='nav-item nav-link' onClick={() => store.showModal(MODAL_NAMES.SUBSTS)} href='javascript:void(0)'>Substituce</a>
+          <a className='nav-item nav-link' onClick={() => store.showModal(MODAL_NAMES.PERMS)} href='javascript:void(0)'>Oprávnění</a>
+          <a className='nav-item nav-link active' onClick={() => store.showModal(MODAL_NAMES.SUBSTS)} href='javascript:void(0)'>Substituce</a>
         </div>
       </div>
     </nav>
