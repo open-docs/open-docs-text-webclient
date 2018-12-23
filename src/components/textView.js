@@ -2,13 +2,9 @@
 import React from 'react'
 import {observer} from 'mobx-react'
 import {FormControl} from 'react-bootstrap'
+import TextEditor from './textEditor'
 import SubstsEditModal from './substsEdit'
 import PermsEditModal from './permsEdit'
-
-const _style = {
-  width: '100%',
-  height: '100%'
-}
 
 const TextView = observer(({store}) => {
   return store.loading ? (<h4>načítám</h4>) : (
@@ -21,9 +17,7 @@ const TextView = observer(({store}) => {
         <PermsEditModal store={store} />
         <div className='row'>
           <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
-            <textarea style={_style}
-              onChange={(evt) => store.onChange('content', evt.target.value)}
-              defaultValue={store.content} />
+            <TextEditor store={store} />
           </div>
           <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
             <p dangerouslySetInnerHTML={{__html: marked(store.doc.content)}} />

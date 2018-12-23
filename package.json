@@ -26,11 +26,13 @@
     "npm": ">=5.0 < 6"
   },
   "dependencies": {
+    "codemirror": "^5.42.2",
     "deep-equal": "^1.0.1",
     "html-webpack-plugin": "^2.22.0",
     "mobx-router": "0.0.8",
     "prop-types": "^15.6.0",
     "react-bootstrap": "^0.31.5",
+    "react-codemirror2": "^5.1.0",
     "react-datepicker": "0.62.0",
     "react-helmet": "^5.2.0",
     "react-mobx-admin": "github:blueskydigital/react-mobx-admin#update",
