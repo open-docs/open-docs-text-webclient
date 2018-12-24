@@ -13,9 +13,9 @@ export default class StateStore {
   @observable val = false
   @observable error = false
 
-  @action onSave () {
-    this.save()
-    this.close()
+  @action save () {
+    this.store.api.put()
+    this.store.closeModal()
   }
 
   @action onChange (text) {

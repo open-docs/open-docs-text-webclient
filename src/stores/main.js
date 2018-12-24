@@ -1,5 +1,6 @@
 import {observable, action, computed} from 'mobx'
 import {MODAL_NAMES} from '../consts'
+import APIService from './apiService'
 import TitleEditStore from './titleEdit'
 import SubtsEditStore from './substsEdit'
 import PermsEditStore from './permsEdit'
@@ -11,7 +12,8 @@ const modalMapping = {
 }
 
 export default class StateStore {
-
+  api = new APIService()
+  
   load (id) {
     const content = `
 # pokujfsd
